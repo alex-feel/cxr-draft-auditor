@@ -1,0 +1,7 @@
+image_id,class_name,class_id,rad_id,x_min,y_min,x_max,y_max
+0a1b2c3d4e5f60718293a4b5c6d7e8f9,Pleural effusion,10,R1,108,1810,240,2120
+0a1b2c3d4e5f60718293a4b5c6d7e8f9,Cardiomegaly,3,R1,420,900,1600,1700
+1f2e3d4c5b6a70819a2b3c4d5e6f7081,Pneumothorax,12,R2,300,200,900,1400
+2a3b4c5d6e7f80910a1b2c3d4e5f6071,No finding,14,R3,,,,
+3b4c5d6e7f8091a2b3c4d5e6f7081923,Aortic enlargement,0,R1,500,300,1100,800
+3b4c5d6e7f8091a2b3c4d5e6f7081923,Lung Opacity,7,R2,600,1200,1400,1900

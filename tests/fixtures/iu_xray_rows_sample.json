@@ -1,0 +1,32 @@
+[
+  {
+    "uid": 1,
+    "MeSH": "normal",
+    "Problems": "normal",
+    "image": "Xray Chest PA and Lateral",
+    "indication": "Positive TB test",
+    "comparison": "None.",
+    "findings": "The lungs are clear. The cardiomediastinal silhouette is within normal limits.",
+    "impression": "No acute cardiopulmonary abnormality."
+  },
+  {
+    "uid": 2,
+    "MeSH": "Pleural Effusion/left/small",
+    "Problems": "Pleural Effusion",
+    "image": "Xray Chest PA and Lateral",
+    "indication": "Shortness of breath",
+    "comparison": "None.",
+    "findings": "Blunting of the left costophrenic angle consistent with a small pleural effusion.",
+    "impression": "Small left pleural effusion."
+  },
+  {
+    "uid": 3,
+    "MeSH": "Cardiomegaly",
+    "Problems": "Cardiomegaly",
+    "image": "Xray Chest PA and Lateral",
+    "indication": "Follow-up",
+    "comparison": "Prior chest radiograph.",
+    "findings": null,
+    "impression": "Stable cardiomegaly. No pneumothorax."
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "image_grounding_list": [
+    {
+      "label": "pleural_effusion",
+      "box_2d": [0.62, 0.08, 0.94, 0.40],
+      "confidence": 0.78,
+      "evidence": "blunting and opacity at the left costophrenic angle"
+    },
+    {
+      "label": "pneumothorax",
+      "box_2d": [0.10, 0.55, 0.45, 0.95],
+      "confidence": 0.66,
+      "evidence": "lucent region with absent lung markings at the right apex"
+    }
+  ],
+  "image_grounding_no_finding": [
+    {
+      "label": "no_finding",
+      "box_2d": null,
+      "confidence": 0.90,
+      "evidence": "clear lung fields, normal cardiomediastinal silhouette"
+    }
+  ],
+  "draft_parse_list": [
+    {"label": "pleural_effusion", "status": "present", "span": "Left pleural effusion"},
+    {"label": "pneumothorax", "status": "absent", "span": "No pneumothorax"}
+  ],
+  "full_audit_result": {
+    "image_findings": [
+      {
+        "finding": "pleural_effusion",
+        "status": "present",
+        "box": [0.62, 0.08, 0.94, 0.40],
+        "confidence": 0.78,
+        "evidence": "blunting at the left costophrenic angle"
+      }
+    ],
+    "draft_findings": [
+      {"finding": "no_finding", "status": "present", "span": "No acute cardiopulmonary abnormality"}
+    ],
+    "audit": {
+      "missing_findings": ["pleural_effusion"],
+      "unsupported_claims": [],
+      "urgent_review_flags": []
+    },
+    "disclaimer": "Research/educational QA only. NOT a medical device, NOT diagnosis, NOT for clinical use. Outputs are frequently wrong; always consult a qualified radiologist.",
+    "box_format": "normalized_y0x0y1x1"
+  }
+}

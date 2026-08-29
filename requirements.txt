@@ -1,0 +1,37 @@
+# Hugging Face Space (ZeroGPU) runtime dependencies for app.py.
+#
+# ZeroGPU constraints honored here:
+# - gradio, spaces, and huggingface_hub are NOT listed. The Space platform
+#   preinstalls and version-pins them; listing them causes pip resolution
+#   failures or silently breaks the ZeroGPU runtime.
+# - torch is intentionally left UNPINNED. The ZeroGPU runtime preinstalls a
+#   compatible torch build (CUDA wheel for the sm_120 Blackwell backing GPU);
+#   pinning a version here risks a mismatch with the platform's CUDA wheel.
+# - torchvision IS listed (it is not preinstalled and the image transforms need
+#   it), and is left unpinned so pip co-resolves it against the platform torch.
+# - transformers and accelerate are listed (the model-serving stack). No CUDA
+#   build-from-source packages (e.g. flash-attn) are listed; the app uses SDPA
+#   attention, which needs no extra wheel.
+# - The local pure-logic package (cxr_auditor: findings, schema, prompts,
+#   comparator, parser, render, inference) ships in this Space as a TOP-LEVEL
+#   `cxr_auditor/` package directory and is imported directly at runtime (no
+#   install step). HF Spaces installs requirements.txt BEFORE copying the app
+#   code in, so an editable `-e .` install cannot find pyproject.toml and fails;
+#   shipping the package as a plain directory on sys.path avoids that entirely.
+#   Only the package's runtime deps (numpy, pydantic, pillow) are listed here.
+#
+# Replace the HF_MODEL_ID Space variable with your published merged 16-bit model
+# before the app can run an audit (see app.py).
+#
+# The draft-impression parser runs NVIDIA Nemotron-3 Nano 4B on the GPU through
+# transformers, alongside the MedGemma grounding model. Nemotron's native
+# architecture (nemotron_h) is supported from transformers >= 5.3, which the Space
+# platform already provides (MedGemma loads on it); the pin below just guarantees
+# that floor. No extra runtime dependency and no CUDA build are needed.
+
+transformers>=5.3
+accelerate>=0.34
+torchvision
+numpy>=1.26
+pillow>=10.3
+pydantic>=2.9

@@ -1,0 +1,29 @@
+CXR Draft Auditor
+Copyright (c) 2026 Aleksandr Filippov.
+
+This product includes a Model Derivative of MedGemma, a Health AI Developer
+Foundations (HAI-DEF) model published by Google.
+
+HAI-DEF is provided under and subject to the Health AI Developer Foundations
+Terms of Use found at:
+https://developers.google.com/health-ai-developer-foundations/terms
+
+The Prohibited Use Policy incorporated into those Terms is found at:
+https://developers.google.com/health-ai-developer-foundations/prohibited-use-policy
+
+Base model: google/medgemma-1.5-4b-it (HAI-DEF license).
+
+This Model Derivative is fine-tuned (QLoRA adapters merged to 16-bit) from the
+base model named above. Any file modified relative to the upstream MedGemma
+distribution carries a prominent "modified" notice. Recipients of this Model
+Derivative are subject to the Section 3.2 use restrictions of the HAI-DEF Terms
+of Use, including the Clinical Use restriction; the full Agreement is provided
+with any distribution and is referenced above.
+
+This is research and educational software only. It is NOT a medical device, NOT
+diagnosis, and NOT for clinical use. See DISCLAIMER.md.
+
+Google does not endorse this Model Derivative, this software, or its author.
+"MedGemma", "Gemma", and "Google" are trademarks of Google LLC and are used here
+only for accurate attribution of the base model; no trademark license or
+endorsement is granted or implied.

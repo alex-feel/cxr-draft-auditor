@@ -1,0 +1,32 @@
+[
+  {
+    "image_id": "0a1b2c3d4e5f60718293a4b5c6d7e8f9",
+    "question_type": "Is there",
+    "question": "Is there pleural effusion?",
+    "answer": "yes",
+    "gt_finding": "Pleural effusion",
+    "gt_location": [108, 1810, 240, 2120],
+    "image_width": 2500,
+    "image_height": 3000
+  },
+  {
+    "image_id": "1f2e3d4c5b6a70819a2b3c4d5e6f7081",
+    "question_type": "Is there",
+    "question": "Is there a pneumothorax?",
+    "answer": "yes",
+    "gt_finding": "Pneumothorax",
+    "gt_location": [300, 200, 900, 1400],
+    "image_width": 2000,
+    "image_height": 2400
+  },
+  {
+    "image_id": "2a3b4c5d6e7f80910a1b2c3d4e5f6071",
+    "question_type": "Yes-No",
+    "question": "Is this chest X-ray normal?",
+    "answer": "yes",
+    "gt_finding": "No finding",
+    "gt_location": null,
+    "image_width": 2048,
+    "image_height": 2048
+  }
+]
