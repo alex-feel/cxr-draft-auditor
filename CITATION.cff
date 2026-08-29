@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file."
+type: software
+title: "CXR Draft Auditor"
+abstract: "A research and educational quality-assurance tool that audits a draft chest X-ray radiology impression against image-grounded findings. A fine-tuned MedGemma vision-language model extracts a constrained set of findings with bounding-box evidence from the X-ray, NVIDIA Nemotron parses the draft impression into the same label space, and a deterministic comparator flags missing findings, unsupported claims, and urgent review cases. Not a medical device and not intended for any clinical use."
+authors:
+  - family-names: Filippov
+    given-names: Aleksandr
+    email: alexfeel@protonmail.com
+    orcid: "https://orcid.org/0009-0001-1120-6114"
+license: Apache-2.0
+url: "https://www.alexfeel.info/projects/cxr-draft-auditor/"
+repository-code: "https://github.com/alex-feel/cxr-draft-auditor"
+keywords:
+  - chest-xray
+  - fine-tuning
+  - gradio
+  - huggingface
+  - medgemma
+  - medical-imaging
+  - nemotron
+  - qlora
+  - radiology
+  - vision-language-model
